@@ -4,8 +4,8 @@
 vim.cmd [[packadd packer.nvim]]
 
 return require('packer').startup(function(use)
-  -- Packer can manage itself
-  use 'wbthomason/packer.nvim'
+	-- Packer can manage itself
+	use 'wbthomason/packer.nvim'
 
 	-- better highlighting
 	use {
@@ -26,14 +26,14 @@ return require('packer').startup(function(use)
 	use {'hrsh7th/cmp-path', requires = { 'hrsh7th/nvim-cmp' } }
 	use {'hrsh7th/cmp-vsnip', requires = { 'hrsh7th/nvim-cmp', 'hrsh7th/vim-vsnip' } }
 
-  -- linting
-  use {
-    'jose-elias-alvarez/null-ls.nvim',
-    requires = { 'nvim-lua/plenary.nvim' },
-  }
+	-- linting
+	use {
+		'jose-elias-alvarez/null-ls.nvim',
+		requires = { 'nvim-lua/plenary.nvim' },
+	}
 
 	-- color schemes
-  use 'shaunsingh/nord.nvim'
+	use 'shaunsingh/nord.nvim'
 	use 'ray-x/starry.nvim'
 	use 'EdenEast/nightfox.nvim'
 	use {'rose-pine/neovim', as = 'rose-pine'}
