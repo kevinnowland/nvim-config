@@ -10,8 +10,20 @@ null_ls.setup({
 		-- javascript
 		null_ls.builtins.diagnostics.eslint_d,
 
-		-- javascript, react, typescript, css, html, markdown, yaml, etc..
-		null_ls.builtins.formatting.prettier,
+		null_ls.builtins.formatting.prettier.with({
+			filetypes = {
+				"css",
+				"graphql",
+				"html",
+				"javascript",
+				"javascriptreact",
+				"json",
+				"jsonc",
+				"typescript",
+				"typescriptreact",
+				"yaml",
+			}
+		}),
 
 		-- python
 		null_ls.builtins.diagnostics.flake8.with({
