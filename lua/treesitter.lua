@@ -1,5 +1,7 @@
 require'nvim-treesitter.configs'.setup{
 	ensure_installed = {
+		'bash',
+		'c_sharp',
 		'css',
 		'go',
 		'help',
@@ -13,6 +15,7 @@ require'nvim-treesitter.configs'.setup{
 		'sql',
 		'terraform',
 		'vim',
+		'yaml',
 	},
 	sync_install = false,
 	auto_install = true,
