@@ -1,5 +1,5 @@
 -- leader
-vim.g.mapleader = ' '
+vim.g.mapleader = ';'
 
 -- splits
 vim.opt.splitright = true
@@ -19,6 +19,7 @@ vim.opt.hlsearch = false
 vim.opt.number = true
 vim.opt.ruler = true
 vim.opt.cursorline = true
+vim.opt.wrap = true
 
 -- color
 --vim.o.termguicolors = true
