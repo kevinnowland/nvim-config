@@ -11,6 +11,7 @@ require'nvim-treesitter.configs'.setup{
 		'query',
 		'rust',
 		'sql',
+		'terraform',
 		'vim',
 	},
 	sync_install = false,
