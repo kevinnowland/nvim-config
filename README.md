@@ -6,7 +6,9 @@ This is my neovim config which on a unix machine goes under `~/.config/nvim`.
 1. Install [packer](https://github.com/wbthomason/packer.nvim)
 1. Make sure to `:PackerSync`. This might take a couple attempts
 
-In order for all the linting commands to work, have to install things:
+Then need to also install linting and LSP clients. For example:
+
+1. Install pyright. `sudo npm -g install pyright` or `brew install pyright`
 1. Install prettier: `sudo npm -g install prettier`
 1. Install eslint_d: `sudo npm -g install eslint_d`
 1. Install go stuff:
