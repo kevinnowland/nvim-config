@@ -5,6 +5,9 @@ tree.setup({
 	renderer = {
 		group_empty = true
 	},
+	filters = {
+		custom = { '.git' },
+	},
 })
 
-
+vim.keymap.set('n', '<leader>e', '<Cmd>NvimTreeToggle<CR>', {silent=true})
