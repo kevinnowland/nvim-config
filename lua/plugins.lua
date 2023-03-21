@@ -32,6 +32,12 @@ return require('packer').startup(function(use)
 		requires = { 'nvim-lua/plenary.nvim' },
 	}
 
+	-- file tree
+	use {
+		'nvim-tree/nvim-tree.lua',
+		requires = { 'nvim-tree/nvim-web-devicons' },
+	}
+
 	-- color schemes
 	use 'shaunsingh/nord.nvim'
 	use 'ray-x/starry.nvim'
