@@ -46,4 +46,7 @@ return require('packer').startup(function(use)
 	use {'rose-pine/neovim', as = 'rose-pine'}
 	use 'sainnhe/everforest'
 
+	-- get a terminal
+	use 'voldikss/vim-floaterm'
+
 end)
