@@ -35,5 +35,9 @@ null_ls.setup({
 
 		-- rust
 		null_ls.builtins.formatting.rustfmt,
+
+		-- terraform
+		null_ls.builtins.diagnostics.terraform_validate,
+		null_ls.builtins.formatting.terraform_fmt,
 	},
 })
