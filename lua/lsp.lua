@@ -1,8 +1,9 @@
 local lspconfig = require('lspconfig')
 
 -- clients to use
-lspconfig.pyright.setup({})
-lspconfig.rust_analyzer.setup({})
+lspconfig.pyright.setup{}
+lspconfig.rust_analyzer.setup{}
+lspconfig.tsserver.setup{}
 
 -- key mappings
 vim.api.nvim_create_autocmd('LspAttach', {
