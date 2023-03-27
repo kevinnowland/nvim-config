@@ -15,7 +15,10 @@ Then need to also install linting and LSP clients. For example:
 
         go install -v github.com/incu6us/goimports-reviser/v3@latest
         go install golang.org/x/tools/cmd/goimports@latest
+1. To get the markdown preview to work, had to go find it under `~/.local/share/nvim/site/pack/packer/opt/markdown-preview.nvim`
+and `cd app && yarn install`.
 
 
 I also had to change some tmux things to get the colors to work correctly.
 The `tmux` and linting things can be easily found via `:CheckHealth`.
+

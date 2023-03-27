@@ -49,4 +49,10 @@ return require('packer').startup(function(use)
 	-- get a terminal
 	use 'voldikss/vim-floaterm'
 
+  -- preview markdown (requires nodejs and yarn)
+  use { 
+    'iamcco/markdown-preview.nvim',
+    run = 'cd app && npm install',
+    ft = {'markdown'},
+  }
 end)
