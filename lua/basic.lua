@@ -21,6 +21,7 @@ vim.opt.hlsearch = false
 
 -- visual references
 vim.opt.number = true
+vim.opt.relativenumber = true
 vim.opt.ruler = true
 vim.opt.cursorline = true
 vim.opt.wrap = true
