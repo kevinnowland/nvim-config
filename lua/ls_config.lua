@@ -30,7 +30,9 @@ null_ls.setup({
 			extra_args = {"--max-line-length=88"},
 		}),
 		null_ls.builtins.diagnostics.mypy,
-		null_ls.builtins.formatting.isort,
+		null_ls.builtins.formatting.isort.with({
+      extra_args = {"--no-sections"}
+    }),
 		null_ls.builtins.formatting.black,
 
 		-- rust

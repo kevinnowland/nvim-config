@@ -4,7 +4,23 @@ local lspconfig = require('lspconfig')
 lspconfig.pyright.setup{}
 lspconfig.rust_analyzer.setup{}
 lspconfig.tsserver.setup{}
-
+lspconfig.gopls.setup {
+  on_attach = on_attach,
+  capabilities = capabilities,
+  filetypes = { "go", "gomod" },
+  root_dir = lspconfig.util.root_pattern("go.mod", ".git"),
+  settings = {
+    gopls = {
+      usePlaceholders = false,
+      buildFlags =  {"-tags=e2e"},
+      gofumpt = true,
+      ["local"] = "<repo>",
+    }
+  },
+  init_options = {
+    buildFlags =  {"-tags=e2e"},
+  }
+}
 -- key mappings
 vim.api.nvim_create_autocmd('LspAttach', {
 	group = vim.api.nvim_create_augroup('UserLspConfig', {}),
