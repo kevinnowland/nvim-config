@@ -26,5 +26,10 @@ vim.opt.ruler = true
 vim.opt.cursorline = true
 vim.opt.wrap = true
 
+-- diagnostics
+-- nnoremap("]d", function() vim.diagnostic.goto_prev() end)
+vim.api.nvim_set_keymap('n', '[d', '', { noremap = true, silent = true, callback = function() vim.diagnostic.goto_next() end })
+vim.api.nvim_set_keymap('n', ']d', '', { noremap = true, silent = true, callback = function() vim.diagnostic.goto_prev() end })
+
 -- color
 --vim.o.termguicolors = true
