@@ -10,6 +10,7 @@ require'nvim-treesitter.configs'.setup{
 		'javascript',
 		'lua',
 		'markdown',
+    'ocaml',
 		'python',
 		'query',
 		'rust',

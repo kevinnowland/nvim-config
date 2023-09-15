@@ -1,6 +1,7 @@
 local lspconfig = require('lspconfig')
 
 -- clients to use
+lspconfig.ocamllsp.setup{}
 lspconfig.pyright.setup{}
 lspconfig.rust_analyzer.setup{}
 lspconfig.tsserver.setup{}
@@ -12,7 +13,7 @@ lspconfig.gopls.setup {
   settings = {
     gopls = {
       usePlaceholders = false,
-      buildFlags =  {"-tags=e2e"},
+      buildFlags =  {"-tags=e2e,contract"},
       gofumpt = true,
       ["local"] = "<repo>",
     }
