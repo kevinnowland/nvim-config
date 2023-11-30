@@ -7,9 +7,6 @@ null_ls.setup({
 		null_ls.builtins.formatting.goimports,
 		null_ls.builtins.formatting.goimports_reviser,
 
-		-- javascript
-		null_ls.builtins.diagnostics.eslint_d,
-
 		null_ls.builtins.formatting.prettier.with({
 			filetypes = {
 				"css",
@@ -26,14 +23,8 @@ null_ls.setup({
 		}),
 
 		-- python
-		null_ls.builtins.diagnostics.flake8.with({
-			extra_args = {"--max-line-length=88"},
-		}),
+    -- rest is now handled by ruff-lsp
 		null_ls.builtins.diagnostics.mypy,
-		null_ls.builtins.formatting.isort.with({
-      extra_args = {"--no-sections"}
-    }),
-		null_ls.builtins.formatting.black,
 
 		-- rust
 		null_ls.builtins.formatting.rustfmt,

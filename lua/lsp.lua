@@ -2,7 +2,15 @@ local lspconfig = require('lspconfig')
 
 -- clients to use
 lspconfig.ocamllsp.setup{}
-lspconfig.pyright.setup{}
+--lspconfig.pyright.setup{}
+lspconfig.ruff_lsp.setup{
+  on_attach = on_attach,
+  init_options = {
+    settings = {
+      args = {},
+    }
+  }
+}
 lspconfig.rust_analyzer.setup{}
 lspconfig.tsserver.setup{}
 lspconfig.gopls.setup {
