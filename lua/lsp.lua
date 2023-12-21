@@ -1,6 +1,7 @@
 local lspconfig = require('lspconfig')
 
 -- clients to use
+lspconfig.terraformls.setup{}
 lspconfig.ocamllsp.setup{}
 --lspconfig.pyright.setup{}
 lspconfig.ruff_lsp.setup{
