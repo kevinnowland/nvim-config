@@ -26,9 +26,6 @@ null_ls.setup({
     -- rest is now handled by ruff-lsp
 		null_ls.builtins.diagnostics.mypy,
 
-		-- rust
-		null_ls.builtins.formatting.rustfmt,
-
 		-- terraform
 		null_ls.builtins.diagnostics.terraform_validate,
 		null_ls.builtins.formatting.terraform_fmt,

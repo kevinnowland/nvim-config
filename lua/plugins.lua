@@ -29,7 +29,7 @@ return require('packer').startup(function(use)
 
 	-- linting
 	use {
-		'jose-elias-alvarez/null-ls.nvim',
+    'nvimtools/none-ls.nvim',
 		requires = { 'nvim-lua/plenary.nvim' },
 	}
 
@@ -61,4 +61,7 @@ return require('packer').startup(function(use)
     'nvim-telescope/telescope.nvim', tag = '0.1.5',
     requires = { 'nvim-lua/plenary.nvim' },
   }
+
+  -- omnisharp
+  use 'Omnisharp/omnisharp-vim'
 end)
